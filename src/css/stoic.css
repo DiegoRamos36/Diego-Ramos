@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+.stoic {
+  background: url('/src/img/fundo.jpeg') center no-repeat;
+  color: #fff;
+}
+
+.projeto.stoic .card {
+  background-color: #252525;
+}
+
+.titulo-projeto {
+  text-align: center;
+  font-size: 64px;
+
+}
+
+
+.projeto.stoic h1 {
+  font-family: Kode Mono;
+}

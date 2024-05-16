@@ -1,0 +1,60 @@
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.contato {
+  display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ width: 900px;
+ background-color: cadetblue;
+}
+
+.contato h1 {
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.contato form {
+  width: 60%;
+}
+.contato label {
+  display: block;
+  font-size: 24px;
+}
+
+.contato input {
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  background-color: #ddd;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 3px;
+  box-sizing: content-box;
+
+}
+
+.contato textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  font-size: 18px;
+  margin: 2px;
+  padding: 5px;
+  border: none;
+  background-color: #ddd;
+  box-sizing: content-box;
+}
+
+.contato button {
+  padding: 5px 10px;
+  border: none;
+  background: #ddd;
+  border-radius: 2px;
+  font-size: 16px;
+}

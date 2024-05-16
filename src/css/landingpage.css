@@ -1,0 +1,116 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 900px;
+  background: #eee;
+  height: 100vh;
+  flex: 1;
+}
+
+
+.menu {
+  padding-top: 40px;
+}
+
+.menu ul, .social-media ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.menu ul, .social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
+.menu li, .social-media li {
+  font-size: 24px;
+  padding: 30px 30px 20px 5%;
+  text-indent: 50px;
+  cursor: pointer;
+}
+
+.menu li::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  transition: all .3s ease;
+  position: absolute;
+  text-indent: 0;
+}
+
+.menu ul li:hover::before {
+  content: url('/src/assets/uparrow.svg');
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+ 
+}
+.menu::after {
+  content: '';
+  display: block;
+  width: 93%;
+  height: 2px;
+  background: #252525;
+  margin-left: 5%;
+}
+
+.menu ul li:nth-child(1)::before {
+  background-color: tomato;
+
+}
+.menu ul li:nth-child(2)::before {
+  background-color: cadetblue;
+
+}
+.menu ul li:nth-child(3)::before {
+  background-color: darkgreen;
+
+}
+.menu ul li:nth-child(4)::before {
+  background-color: goldenrod;
+}
+
+.main span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.title {
+  font-size: 7.594em
+}
+
+.subtitle {
+  font-size: 3.375em;
+  font-style: italic;
+  color: #333;
+}
+
+
+.social-media::before {
+  content: '';
+  display: block;
+  width: 93%;
+  height: 2px;
+  background: #252525;
+  margin-left: 5%;
+}
+
+
+
+.social-media li:hover {
+color: cadetblue;
+}

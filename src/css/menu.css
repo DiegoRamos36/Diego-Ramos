@@ -1,0 +1,122 @@
+.menu-bar {
+  position: fixed;
+  left: 3%;
+  right: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  transform: translateY(-200px);
+  visibility: hidden;
+  transition: all 1s ease;
+  z-index: 9;
+  }
+
+  .menu-bar.showed {
+    visibility: visible;
+    transform: translateY(0);
+
+  }
+
+.bar {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #eee;
+  transition: all .5s ease;
+}
+.open-menu.effect .bar:nth-child(1) {
+  transition: all .5s ease-in;
+transform: rotate(45deg);
+width: 40px;
+transform-origin: top left;
+
+
+}
+
+.open-menu.effect .bar:nth-child(2) {
+  transition: all .5s ease-in;
+  transform-origin: center;
+  width: 0px;
+}
+.open-menu.effect .bar:nth-child(3) {
+  transition: all .5s ease-in;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  width: 40px;
+}
+
+.open-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  overflow: hidden;
+
+}
+
+.menu-bar h1 {
+  font-size: 38px;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+.sobrenome {
+  font-size: 38px;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: #000;
+
+}
+
+
+
+
+.header-menu {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  left: 0;
+  background: #202020;
+  transition: all 1s ease;
+  transform: translateY(1000px);
+  visibility: hidden;
+  z-index: 8;
+}
+
+.header-menu.mostrar {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header-menu div {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  margin: 10% 5%;
+  height: 100%;
+}
+
+.header-menu li a, .header-menu span p {
+  color: #eee;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 24px;
+  letter-spacing: 2px;
+} 
+
+.header-title {
+  font-size: 64px;
+  color: #eee;
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-menu li, .header-menu span p {
+  padding: 5px;
+}
+
+.header-menu li a:hover{
+  color: #ccc;
+}

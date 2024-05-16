@@ -1,0 +1,109 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+textarea {
+  resize: none;
+}
+body {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+.body {
+  display: flex;
+  overflow-x: scroll;
+  width: 5200px;
+}
+
+
+
+.projeto {
+  width: 400px;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: width 1.5s ease;
+
+}
+
+.projeto.open .card {
+  opacity: 1;
+}
+
+.open {
+  width: 900px;
+}
+
+
+.projeto h5 {
+  flex: 3;
+  }
+
+
+
+.projeto::after {
+  content: url('/src/assets/uparrow.svg');
+  background: #202020 ;
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 85px;
+  left: 30px;
+  opacity: 0;
+  cursor: pointer; 
+  transition: all 1.2s ease;
+}
+
+.projeto.open::after {
+  opacity: 1;
+}
+
+.projeto .card {
+  transition: all 1.2s ease;
+  opacity: 0;
+ flex: 1;
+}
+
+.projeto span {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+ 
+}
+
+.projeto span p {
+ 
+  font-family: monospace;
+  letter-spacing: -1px;
+  font-size: 16px;
+}
