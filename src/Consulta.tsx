@@ -5,7 +5,7 @@ const Consulta = () => {
     event.preventDefault();
   }
   return (
-    <div className="contato">
+    <div id="contato" className="contato">
       <h1>entre em contato.</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Nome</label>

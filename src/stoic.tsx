@@ -7,23 +7,26 @@ const Stoic = () => {
 
   React.useEffect(() => {
     window.addEventListener('scroll', () => {
-      handleScrollY(500, setScrolledY);
+      handleScrollY(1000, setScrolledY);
     });
     window.addEventListener('scroll', () => {
-      handleScrollX(400, setScrolled);
+      handleScrollX(1000, setScrolled);
     });
     return () => {
       window.removeEventListener('scroll', () => {
-        handleScrollY(500, setScrolledY);
+        handleScrollY(1000, setScrolledY);
       });
       window.removeEventListener('scroll', () => {
-        handleScrollX(400, setScrolled);
+        handleScrollX(1000, setScrolled);
       });
     };
   }, []);
 
   return (
-    <section className={`projeto stoic ${scrolled || scrolledY ? 'open' : ''}`}>
+    <section
+      id="stoic"
+      className={`projeto stoic ${scrolled || scrolledY ? 'open' : ''}`}
+    >
       <h5></h5>
       <div className="card">
         <span>

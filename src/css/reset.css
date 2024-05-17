@@ -35,7 +35,7 @@ ul {
 .body {
   display: flex;
   overflow-x: scroll;
-  width: 5200px;
+  width: 5900px;
 }
 
 
@@ -46,7 +46,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: width 1.5s ease;
+  transition: width .8s ease;
 
 }
 

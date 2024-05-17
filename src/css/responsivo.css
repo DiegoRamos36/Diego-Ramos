@@ -22,6 +22,29 @@
    height: 90vh;
   }
 
+ .sobre-container  {
+  max-width: 100vw;
+ }
+ .sobre-container img {
+border-radius: 4px;
+ }
+
+ .historia {
+  max-width: 50%;
+  margin: 0px 10px;
+ 
+ }
+ .historia h1 {
+  margin-bottom: 10px;
+  font-size: 2.25em;
+ }
+ .historia p {
+  font-size: 14px;
+  margin: 5px;
+ }
+
+
+
   .menu {
     padding-top: 30px;
   }
@@ -138,6 +161,27 @@
   .subtitle {
     font-size: 1.5em;
   }
+
+  .sobre-container {
+    padding: 40px;
+  }
+ 
+  .sobre-container img {
+    display: none;
+  }
+
+  .historia {
+    max-width: 100%;
+  }
+
+  .historia h1 {
+    font-size: 3.375rem;
+  }
+
+  .historia p {
+    font-size: 18px;
+  }
+ 
 
   .open-menu {
     height: 15px;

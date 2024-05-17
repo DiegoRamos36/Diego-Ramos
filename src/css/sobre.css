@@ -1,0 +1,33 @@
+.sobre-container {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background: cadetblue;
+}
+
+.sobre-container img {
+  max-width: 600px;
+}
+
+.historia {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: 40px;
+}
+.sobre-container.mostrar-texto .historia p {
+  opacity: 1;
+}
+.historia p  {
+  opacity: 0;
+  margin-top: 10px;
+  font-size: 1.225em;
+  transition: all .8s ease;
+}
+.historia  h1 {
+  font-size: 3.375rem;
+  margin-bottom: 40px;
+}
+
+

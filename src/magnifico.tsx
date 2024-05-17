@@ -7,17 +7,17 @@ const Magnifico = () => {
 
   React.useEffect(() => {
     window.addEventListener('scroll', () => {
-      handleScrollY(1100, setScrolledY);
+      handleScrollY(1800, setScrolledY);
     });
     window.addEventListener('scroll', () => {
-      handleScrollX(1200, setScrolled);
+      handleScrollX(1800, setScrolled);
     });
     return () => {
       window.removeEventListener('scroll', () => {
-        handleScrollY(1100, setScrolledY);
+        handleScrollY(1800, setScrolledY);
       });
       window.removeEventListener('scroll', () => {
-        handleScrollX(1200, setScrolled);
+        handleScrollX(1800, setScrolled);
       });
     };
   }, []);

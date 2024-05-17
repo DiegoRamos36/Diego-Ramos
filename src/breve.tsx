@@ -6,17 +6,17 @@ const Breve = () => {
 
   React.useEffect(() => {
     window.addEventListener('scroll', () => {
-      handleScrollY(1700, setScrolledY);
+      handleScrollY(2400, setScrolledY);
     });
     window.addEventListener('scroll', () => {
-      handleScrollX(1700, setScrolled);
+      handleScrollX(2400, setScrolled);
     });
     return () => {
       window.removeEventListener('scroll', () => {
-        handleScrollY(1700, setScrolledY);
+        handleScrollY(2400, setScrolledY);
       });
       window.removeEventListener('scroll', () => {
-        handleScrollX(1700, setScrolled);
+        handleScrollX(2400, setScrolled);
       });
     };
   }, []);

@@ -8,18 +8,19 @@ import Escolaridade from './Escolaridade';
 
 import Menu from './Menu';
 import Consulta from './Consulta';
+import Sobre from './Sobre';
 
 function App() {
   React.useEffect(() => {
     const handleScroll = (event: WheelEvent) => {
       if (event.deltaY > 0) {
         window.scrollBy({
-          left: 200,
+          left: 300,
           behavior: 'smooth',
         });
       } else {
         window.scrollBy({
-          left: -200,
+          left: -300,
           behavior: 'smooth',
         });
       }
@@ -35,6 +36,7 @@ function App() {
     <div className="body">
       <Menu />
       <LandingPage />
+      <Sobre />
       <Stoic />
       <Magnifico />
       <Breve />

@@ -1,12 +1,38 @@
+import { goTo } from './function';
+
 const Landing_Page = () => {
   return (
-    <main className="main">
+    <main id="main" className="main">
       <nav className="menu">
         <ul>
-          <li>Projetos</li>
-          <li>Educação</li>
-          <li>Experiência</li>
-          <li>Contato</li>
+          <li
+            onClick={() => {
+              goTo('stoic', 'start', 600);
+            }}
+          >
+            Projetos
+          </li>
+          <li
+            onClick={() => {
+              goTo('educacao');
+            }}
+          >
+            Educação
+          </li>
+          <li
+            onClick={() => {
+              goTo('experiencia');
+            }}
+          >
+            Experiência
+          </li>
+          <li
+            onClick={() => {
+              goTo('contato', 'start', 400);
+            }}
+          >
+            Contato
+          </li>
         </ul>
       </nav>
 

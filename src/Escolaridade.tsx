@@ -1,6 +1,6 @@
 const Escolaridade = () => {
   return (
-    <section className="conteudo">
+    <section id="educacao" className="conteudo">
       <ul className="dev">
         <h1>Dev</h1>
         <li>

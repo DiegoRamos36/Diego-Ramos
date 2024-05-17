@@ -1,4 +1,5 @@
 import React from 'react';
+import { goTo } from './function';
 
 const Menu = () => {
   const [scrolledX, setscrolledX] = React.useState(false);
@@ -43,7 +44,11 @@ const Menu = () => {
   return (
     <>
       <header className={`menu-bar ${scrolledX || scrolledY ? 'showed' : ''}`}>
-        <h1>
+        <h1
+          onClick={() => {
+            goTo('main', 'start', 800);
+          }}
+        >
           Diego
           <span className="sobrenome">Ramos</span>
         </h1>
