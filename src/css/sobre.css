@@ -3,11 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
- background: cadetblue;
+  background-color: #008b8b;
 }
 
 .sobre-container img {
   max-width: 600px;
+  height: 100%;
 }
 
 .historia {
@@ -15,8 +16,12 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 margin: 40px;
+
 }
 .sobre-container.mostrar-texto .historia p {
+  opacity: 1;
+}
+.sobre-container.mostrar-texto .historia h1 {
   opacity: 1;
 }
 .historia p  {
@@ -28,6 +33,8 @@ margin: 40px;
 .historia  h1 {
   font-size: 3.375rem;
   margin-bottom: 40px;
+  transition: all .8s ease;
+  opacity: 0;
 }
 
 

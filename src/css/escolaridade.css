@@ -62,7 +62,7 @@ box-sizing: content-box;
 
 
 .conteudo .design  li::before {
-background-color: #f00;
+background-color: violet;
 }
 
 .conteudo .dev li::before {

@@ -46,6 +46,7 @@ const Sobre = () => {
         scrolled || scrolledY ? 'mostrar-texto' : ''
       }`}
     >
+      <img src={imagem} alt="Diego Branca" />
       <div className="historia">
         <h1>sobre mim.</h1>
         <span>
@@ -77,7 +78,7 @@ const Sobre = () => {
           </p>
         </span>
       </div>
-      <img src={imagem} alt="Diego Branca" />
+
       {/* {mural.map((foto, index) => (
           <img
             key={index}

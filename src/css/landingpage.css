@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 900px;
+  max-width: 900px ;
   background: #eee;
   height: 100vh;
   flex: 1;
@@ -61,8 +61,9 @@
   content: '';
   display: block;
   width: 93%;
-  height: 2px;
-  background: #252525;
+  height: 5px;
+  background: #008b8b;
+  transform: skew(45deg);
   margin-left: 5%;
 }
 
@@ -104,9 +105,10 @@
   content: '';
   display: block;
   width: 93%;
-  height: 2px;
-  background: #252525;
+  height: 5px;
+  background: #008b8b;
   margin-left: 5%;
+  transform: skew(-45deg);
 }
 
 
