@@ -43,10 +43,32 @@ const Landing_Page = () => {
 
       <nav className="social-media">
         <ul>
-          <li>Instagram</li>
-          <li>Linkedin</li>
-          <li>Twitter</li>
-          <li>Github</li>
+          <li>
+            <a
+              href="https://www.instagram.com/diego.ferreira36/?igsh=cWV1a2RqNm54cmYx"
+              target="_blank"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/diego-ramos36/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/Diego_R4mos" target="_blank">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/DiegoRamos36" target="_blank">
+              Github
+            </a>
+          </li>
         </ul>
       </nav>
     </main>

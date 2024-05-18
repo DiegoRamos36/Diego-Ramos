@@ -10,20 +10,27 @@ const Stoic = () => {
       handleScrollY(1000, setScrolledY);
     });
     window.addEventListener('scroll', () => {
-      handleScrollX(1000, setScrolled);
+      handleScrollX(1200, setScrolled);
     });
     return () => {
       window.removeEventListener('scroll', () => {
-        handleScrollY(1000, setScrolledY);
+        handleScrollY(900, setScrolledY);
       });
       window.removeEventListener('scroll', () => {
-        handleScrollX(1000, setScrolled);
+        handleScrollX(1200, setScrolled);
       });
     };
   }, []);
 
   return (
     <section
+      onClick={() => {
+        window.open(
+          'https://stoic-pied.vercel.app/',
+          '_blank',
+          'noopener,noreferrer',
+        );
+      }}
       id="stoic"
       className={`projeto stoic ${scrolled || scrolledY ? 'open' : ''}`}
     >

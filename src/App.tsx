@@ -5,7 +5,6 @@ import LandingPage from './Landing-Page';
 import Magnifico from './magnifico';
 import Stoic from './stoic';
 import Escolaridade from './Escolaridade';
-
 import Menu from './Menu';
 import Consulta from './Consulta';
 import Sobre from './Sobre';

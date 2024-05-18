@@ -1,7 +1,7 @@
-import { FormEvent } from 'react';
+import React from 'react';
 
 const Consulta = () => {
-  function handleSubmit(event: FormEvent) {
+  function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
   }
   return (

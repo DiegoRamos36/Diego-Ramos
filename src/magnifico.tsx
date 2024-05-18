@@ -7,14 +7,14 @@ const Magnifico = () => {
 
   React.useEffect(() => {
     window.addEventListener('scroll', () => {
-      handleScrollY(1800, setScrolledY);
+      handleScrollY(1600, setScrolledY);
     });
     window.addEventListener('scroll', () => {
       handleScrollX(1800, setScrolled);
     });
     return () => {
       window.removeEventListener('scroll', () => {
-        handleScrollY(1800, setScrolledY);
+        handleScrollY(1600, setScrolledY);
       });
       window.removeEventListener('scroll', () => {
         handleScrollX(1800, setScrolled);
@@ -24,6 +24,13 @@ const Magnifico = () => {
 
   return (
     <section
+      onClick={() => {
+        window.open(
+          'https://www.domelmagnifico.com.br',
+          '_blank',
+          'noopener,noreferrer',
+        );
+      }}
       className={`projeto magnifico ${scrolled || scrolledY ? 'open' : ''}`}
     >
       <h5></h5>
