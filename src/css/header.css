@@ -1,0 +1,47 @@
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  position: fixed;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  overflow: hidden;
+ text-wrap: nowrap;
+  z-index: 9;
+}
+
+
+.header ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.header li a {
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all .4s ease;
+
+}
+
+.header span {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: lowercase;
+cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
+
+
+

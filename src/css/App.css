@@ -1,10 +1,13 @@
-@import './landingpage.css';
-@import './reset.css';
-@import './stoic.css';
-@import './magnifico.css';
-@import './breve.css';
-@import './escolaridade.css';
-@import './contato.css';
-@import './menu.css';
-@import './sobre.css';
-@import './responsivo.css';
+@import "contato.css";
+@import "cursos.css";
+@import "projetos.css";
+@import "habilidades.css";
+@import "sobre.css";
+@import "landingpage.css";
+@import "header.css";
+@import "reset.css";
+@import "responsivo.css";
+
+
+
+

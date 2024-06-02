@@ -1,0 +1,43 @@
+.habilidades-container {
+  background-color: var(--cor-4);
+  padding: var(--espacamento-vertical) auto;
+  
+}
+
+
+.habilidades {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px;
+ 
+
+}
+.habilidades h1 {
+  margin-bottom: 60px;
+}
+
+.habilidade-icons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: var(--espacamento-horizontal);
+}
+
+.habilidade-icons img{
+  box-sizing: content-box;
+  width: 60px;
+  border: 2px solid var(--cor-1);
+  border-bottom: 10px solid var(--cor-1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.habilidade-icons img:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}

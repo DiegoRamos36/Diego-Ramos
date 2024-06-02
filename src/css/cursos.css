@@ -1,0 +1,96 @@
+.formacao {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.formacao h1 {
+    font-size: var(--texto-g);
+    margin: var(--espacamento-vertical) auto;
+}
+
+.formacao li {
+    border: 1px solid var(--cor-5);
+}
+
+.formacao span {
+
+  border-radius: 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+transition: all .4s ease;
+cursor: pointer;
+}
+
+.formacao span:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    scale: 1.02;
+}
+
+
+.uniasselvi, .origamid {
+    display: flex;
+    align-items: center;
+
+}
+
+.uniasselvi::before, .origamid::before {
+    width: 15px;
+    height: 20px;
+    display: block;
+    border-radius: 2px;
+    content: '';
+    margin-right: 10px;
+}
+
+.formacao h4 {
+    color: #aaa;
+}
+
+.formacao h2 {
+    font-size: var(--texto-m);
+    margin: var(--espacamento-vertical) var(--espacamento-horizontal);
+}
+
+.uniasselvi::before {
+    background-color: #FFDD00;
+}
+.origamid::before {
+    background-color: var(--cor-3);
+}
+
+.formacao div img {
+    max-width: 400px;
+    height: auto;
+}
+
+.projeto-final {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 10px 20px;
+    max-width: 900px;
+
+}
+
+
+
+.projeto-final div {
+    display: flex;
+    gap: var(--espacamento-horizontal);
+}
+
+.projeto-final h5 {
+    font-size: var(--texto-m);
+    font-style: italic;
+    font-weight: normal;
+   margin-bottom: var(--espacamento-vertical);
+}
+
+
+.projeto-final p{
+
+    line-height: 1.4;
+    margin-bottom: var(--espacamento-vertical);
+
+}

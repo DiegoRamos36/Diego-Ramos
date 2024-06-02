@@ -1,58 +1,22 @@
-import React from 'react';
 
-export function handleScrollX(
-  pos: number,
-  opener: React.Dispatch<React.SetStateAction<boolean>>,
-) {
-  const scrollX = window.scrollX || window.pageXOffset;
 
-  if (scrollX >= pos) {
-    opener(true);
-  } else {
-    opener(false);
-  }
-}
-export function handleScrollY(
-  pos: number,
-  opener: React.Dispatch<React.SetStateAction<boolean>>,
-) {
-  const scrollY = window.scrollY || window.pageYOffset;
-
-  if (scrollY >= pos) {
-    opener(true);
-  } else {
-    opener(false);
-  }
+export function goTo(link: string) {
+  window.open(link, '_blank');
 }
 
-export function goTo(
-  id: string,
-  align: 'start' | 'center' | 'end' | 'nearest' = 'start',
-  gap = 0,
-) {
-  const elemento = document.getElementById(id);
-
-  if (elemento) {
-    const elementoRect = elemento.getBoundingClientRect();
-    const scrollLeft = window.scrollX || window.pageXOffset;
-    const scrollTop = window.scrollY || window.pageYOffset;
-    const elementoLeft = elementoRect.left + scrollLeft;
-    const elementoTop = elementoRect.top + scrollTop;
-    let x = elementoLeft;
-    const y = elementoTop;
-
-    if (align === 'center') {
-      x -= window.innerWidth / 2;
-    } else if (align === 'end') {
-      x -= window.innerWidth;
-    }
-
-    window.scrollTo({
-      left: x + 800 - gap,
-      top: y,
-      behavior: 'smooth',
-    });
-  } else {
-    console.error('Elemento não encontrado');
-  }
+export function sendMail(destiny:string) {
+  window.location.assign(`mailto:${destiny}`);
+  
 }
+
+export function downloadCv() {
+  const pdfUrl = 'https://drive.google.com/uc?export=download&id=1BFp_uu6syDqRIVqnPJRVQzfvKPAvilce';
+
+  const a = document.createElement('a');
+  a.href = pdfUrl;
+  a.download = 'CV_DiegoRamos.pdf';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
